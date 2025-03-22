@@ -10,7 +10,7 @@ The system operates in **real-time**, making it suitable for deployment in **res
 - **Vehicle Number Plate Detection**: Utilizes `PaddleOCR` for robust text extraction from vehicle plates.
 - **Database Integration**: Stores and verifies credentials using `SQLite3` (local database) and `MongoDB` (cloud storage).
 - **Web Interface**: Developed using `Flask`, `HTML`, `CSS`, and `JavaScript` for real-time monitoring and data management.
-- **User-Friendly GUI**: Built with `Tkinter` and `Streamlit` for local system interaction.
+<!-- - **User-Friendly GUI**: Built with `Tkinter` and `Streamlit` for local system interaction. -->
 - **Automated Logging System**: Records each entry with **timestamps** for security audits.
 
 ## System Architecture
@@ -19,6 +19,7 @@ Admin Inputs  -->  User Entry Process  -->  Data Processing  -->  Database Match
 ```
 ### **System Workflow Diagram**
 ![System Workflow](images/system_architecture.png)
+
 ### **A. Admin Inputs**
 - **Admin Role**: The admin is responsible for setting up the initial database of authorized users.
 - **Data Entry**: The admin inputs the person's name, vehicle details, and the vehicle's number plate into the system. This information is stored in a centralized database for future comparison during user authentication.
@@ -105,14 +106,6 @@ The system employs **PaddleOCR** and OpenCV for efficient number plate recogniti
 
 This method ensures **accurate, real-time, and reliable recognition** of vehicle plates.
 
-### **Database**
-### **Stored data in SQLite3 database**
-![Number Plate Detection](images/stored_database.png)
-
-### **Updated MongoDB database after find matched data**
-![Number Plate Detection](images/updated_database.png)
-
-
 ### **Key Features Highlighted in the Flowchart**
 - **Admin Control**: The admin has full control over the database, ensuring only authorized individuals and vehicles gain entry.
 - **Dual Authentication**: The use of both facial recognition and number plate detection provides an added layer of security.
@@ -136,15 +129,13 @@ This method ensures **accurate, real-time, and reliable recognition** of vehicle
 - **Real-time Processing Capability**: Flask-based backend ensures low-latency execution.
 - **Database Query Time**: Optimized for fast authentication and logging.
 
-## Screenshots & System Workflow
-
-
-
-
-
 
 ### **Database Integration**
-![Database Management](images/database_management.png)
+### **Stored data in SQLite3 database**
+![Number Plate Detection](images/stored_database.png)
+
+### **Updated MongoDB database after find matched data**
+![Number Plate Detection](images/updated_database.png)
 
 ## Use Cases
 The **IoT-based Smart Entrance System** can be deployed in:
